@@ -39,7 +39,7 @@ def create_weather_counts_df(day_df):
     }).reset_index()
     return weather_counts_df
 
-day_df = pd.read_csv("day_clean.csv")
+day_df = pd.read_csv("https://raw.githubusercontent.com/putrishanty/data-analysis-project/main/dashboard/day_clean.csv")
 
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 day_order = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
